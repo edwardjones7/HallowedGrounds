@@ -1,0 +1,325 @@
+{
+  "prospect": {
+    "business_name": "Hallowed Grounds Coffee Co.",
+    "established": 2021,
+    "industry": "Specialty Coffee / Cafe",
+    "tier_classification": "Tier 2-3 (warm referral, multi-location, mature business)",
+    "lead_source": "Warm intro via Cole (friend, works at the business)",
+    "lead_temperature": "Hot - owner actively asking for AI/tech help",
+    "date_added": "2026-06-15"
+  },
+  "ownership": {
+    "primary_owner": "Matt",
+    "owner_engagement": "High - personally responds to most Google reviews, refunds dissatisfied customers, publicly active",
+    "secondary_contacts": "Cole's boss (the one requesting the meeting - confirm name in meeting)",
+    "owner_disposition": "Curious about AI/tech, exploratory not desperate, interested in scaling and partnership"
+  },
+  "locations": [
+    {
+      "name": "Merchantville Coffee Bar",
+      "address": "177 S Centre St, Merchantville, NJ 08109",
+      "model": "Coffee bar only - co-located with Thyme Kitchen which handles all food prep",
+      "hours": "Tues-Sun 7am-3pm",
+      "google_rating": 4.7,
+      "google_reviews_count": 173,
+      "operational_note": "Two-register system causes customer confusion (food at one, coffee at other)"
+    },
+    {
+      "name": "Turnersville (Washington Twp)",
+      "address": "245 Fries Mill Road, Washington Township, Gloucester County, NJ",
+      "model": "Full cafe + roastery, housemade, local, seed oil free positioning",
+      "hours": "Open daily 7am-3pm",
+      "google_rating": 4.5,
+      "google_reviews_count": 199
+    },
+    {
+      "name": "Mobile Coffee Trailer",
+      "type": "Mobile catering operation",
+      "use_cases": ["Street fairs", "Weddings", "Corporate events", "Catering"]
+    }
+  ],
+  "brand_positioning": {
+    "pillars": [
+      "Specialty/artisan coffee - gourmet espresso, creative monthly specials, Voted Best of the Best 2025",
+      "Local/clean/housemade - seed oil free, locally sourced, housemade syrups and marshmallows",
+      "Community/family-feel - named staff publicly celebrated, personal owner engagement"
+    ],
+    "signature_drinks": [
+      "S'mores Latte",
+      "Tiramisu Iced Latte",
+      "Honey Nut Cheerios drink (Courtney special)",
+      "Booberry coffee (Courtney special)",
+      "Cosmic Brownie (Courtney's lunch box series)",
+      "Apple Butter Chai",
+      "PBJ Latte",
+      "Neapolitan",
+      "The Irishman special latte",
+      "Dubai Chocolate Matcha"
+    ],
+    "named_staff": ["Courtney (most beloved, named in 15+ reviews)", "Tiffany", "Kailyn", "Cassie", "Cade", "Ryan (chef at Thyme Kitchen)"],
+    "monthly_specials_strategy": "Driver of social engagement and repeat visits - rotating drink menus monthly"
+  },
+  "digital_presence": {
+    "website": {
+      "url": "hallowedgroundscoffeeco.com",
+      "quality": "UNKNOWN - evaluate before meeting"
+    },
+    "instagram": {
+      "handle": "@onhallowedgrounds",
+      "followers": 7758,
+      "posts": 347,
+      "activity": "Active - weekly specials, new drink launches"
+    },
+    "facebook": {
+      "handle": "Hallowed Grounds Coffee Co.",
+      "followers": 4900,
+      "activity": "Regular posts about specials, lunch boxes, weekday deals"
+    },
+    "google_business_profile": {
+      "merchantville_rating": 4.7,
+      "turnersville_rating": 4.5,
+      "total_reviews_combined": 372,
+      "review_velocity_estimate": "7-8 reviews/month (below industry potential of 15-25/month for their volume)"
+    },
+    "uber_eats": {
+      "rating": 4.8,
+      "reviews": 170
+    },
+    "online_ordering": {
+      "platform": "Joe Coffee app",
+      "url": "shop.joe.coffee/company/hallowed-grounds-llc",
+      "adoption_signal": "Owner repeatedly tells reviewers 'use the app to skip the line' - suggests adoption is below where it could be"
+    }
+  },
+  "revenue_streams": [
+    "Retail coffee + food (via Thyme Kitchen partnership at Merchantville)",
+    "Full cafe operations at Turnersville",
+    "Mobile catering trailer (weddings, corporate, fairs)",
+    "Catering packages",
+    "Online ordering via Joe Coffee app",
+    "Monthly specials driving repeat visits"
+  ],
+  "customer_pain_points_visible_in_reviews": {
+    "speed_wait_times": {
+      "severity": "HIGH - recurring complaint",
+      "examples": [
+        "Plan to wait up to an hour on weekends",
+        "34 minutes for two cold brews on one occasion",
+        "Always expect a long wait even when not busy"
+      ],
+      "owner_response_pattern": "Recommends Joe Coffee app to skip the line"
+    },
+    "quality_inconsistency": {
+      "severity": "MEDIUM",
+      "examples": [
+        "Weak espresso on off days",
+        "Oat milk batch quality issues (different brand used temporarily)",
+        "Recent month-long closure due to water damage"
+      ],
+      "owner_response_pattern": "Strong - personal responses, refunds, accountability"
+    },
+    "two_register_confusion": {
+      "severity": "LOW-MEDIUM, Merchantville specific",
+      "examples": [
+        "Customers confused about which register orders food vs coffee",
+        "Some reviewers felt unacknowledged at registers"
+      ]
+    },
+    "cup_quality": {
+      "severity": "LOW - single complaint",
+      "examples": [
+        "One reviewer mentioned hot drink cups leaking badly"
+      ]
+    }
+  },
+  "operational_strengths": [
+    "Real staff loyalty - named baristas with personal followings",
+    "Creative drink menu drives social engagement and repeat visits",
+    "Personal owner engagement on reviews",
+    "Established brand identity with consistent aesthetic",
+    "Multiple revenue streams (retail, catering, mobile, online)",
+    "Mature 4+ year business with proven product-market fit",
+    "Strong word-of-mouth and local reputation"
+  ],
+  "hypothesized_pain_points": {
+    "to_validate_in_meeting": [
+      {
+        "hypothesis": "Catering pipeline isn't systematized",
+        "reasoning": "Active catering revenue but no visible inquiry funnel - likely losing inquiries to slow response or poor capture",
+        "potential_impact": "HIGH - catering orders are large and high-margin"
+      },
+      {
+        "hypothesis": "Online ordering adoption is below potential",
+        "reasoning": "Owner repeatedly tells reviewers to use the app - suggests low awareness",
+        "potential_impact": "HIGH - direct revenue lift through better app marketing"
+      },
+      {
+        "hypothesis": "Review acquisition isn't systematic",
+        "reasoning": "7-8 reviews/month combined when industry average for their volume is 15-25",
+        "potential_impact": "MEDIUM - SEO and trust compound over time"
+      },
+      {
+        "hypothesis": "Customer database is fragmented",
+        "reasoning": "Joe Coffee app data, Uber Eats data, IG followers, in-store regulars all live in different systems",
+        "potential_impact": "MEDIUM-HIGH - can't run targeted campaigns to actual customer base"
+      },
+      {
+        "hypothesis": "Two-location coordination has gaps",
+        "reasoning": "Different operating models, partnerships, hours - no visible unified dashboard",
+        "potential_impact": "MEDIUM - owner time burned switching between locations mentally"
+      },
+      {
+        "hypothesis": "Social content takes more owner time than it should",
+        "reasoning": "Active weekly specials require regular posting - likely manual",
+        "potential_impact": "LOW-MEDIUM - time savings opportunity"
+      }
+    ],
+    "do_not_pitch": [
+      "Operational speed fixes - these are staffing/layout issues, not software problems",
+      "Full website rebuild as a 'fix' - their brand is mature and working",
+      "AI receptionist as primary offer - cafes get foot traffic, less phone-dependent than service businesses"
+    ]
+  },
+  "diagnostic_questions": {
+    "opening_framing": "Before I throw a bunch of ideas at you, I'd rather understand how the business actually operates and where the friction is. That way I can be specific about what would actually help instead of pitching a generic AI menu.",
+    "questions": [
+      {
+        "category": "Catering",
+        "question": "Walk me through your catering process. From inquiry to event execution. Where does it bottleneck?",
+        "why": "Highest potential ROI area"
+      },
+      {
+        "category": "Online Ordering",
+        "question": "What percent of your transactions are through the Joe Coffee app vs walk-in? Are you happy with that ratio?",
+        "why": "Validates adoption hypothesis"
+      },
+      {
+        "category": "Reviews",
+        "question": "How are you currently asking customers for reviews? Is it systematic or organic?",
+        "why": "Easy ROI win if not systematized"
+      },
+      {
+        "category": "Two-Location Ops",
+        "question": "How do you currently track what's happening at both locations? What would you want to see in one view?",
+        "why": "Surfaces operational visibility pain"
+      },
+      {
+        "category": "Customer Data",
+        "question": "If you wanted to email all your regulars tomorrow about a new menu launch, could you do it? How would you reach them?",
+        "why": "Validates database fragmentation hypothesis"
+      },
+      {
+        "category": "Marketing Time",
+        "question": "Who handles your social and how much time does that eat per week?",
+        "why": "Surfaces content time pain"
+      },
+      {
+        "category": "Catering Conversion",
+        "question": "When someone inquires about catering, what happens? How long does it take you to respond? How many inquiries don't convert?",
+        "why": "Quantifies the catering leaky bucket"
+      },
+      {
+        "category": "Tech Stack",
+        "question": "What tools are you using today? POS, scheduling, marketing, accounting, online ordering?",
+        "why": "Avoids redundant proposals, finds integration opportunities"
+      },
+      {
+        "category": "Owner Time",
+        "question": "If you could free up 5 hours a week, what would you spend it on?",
+        "why": "Surfaces highest-pain manual work"
+      },
+      {
+        "category": "Vision",
+        "question": "What does Hallowed Grounds look like in 24 months? Three locations? More catering? Wholesale? Helps me understand what to build toward.",
+        "why": "Frames you as long-term partner, not vendor"
+      }
+    ]
+  },
+  "proposed_system_stack": {
+    "foundation_tier_2_3": {
+      "price_range": "$2,500-4,500 build + $500-750/mo retainer",
+      "components": [
+        "Modernized website with two-location handling and brand-aligned design",
+        "Catering inquiry form with smart qualification (size, date, dietary, distance, budget)",
+        "Customer email capture + welcome sequence",
+        "Review request automation (post-transaction SMS/email)",
+        "Basic owner dashboard showing reviews, catering pipeline, social mentions",
+        "Client portal access for ongoing requests and updates"
+      ]
+    },
+    "phase_2_60_90_days_after_foundation": {
+      "price_range": "Add-ons at $500-1500/each + retainer adjustment",
+      "components": [
+        "Catering quote/proposal automation",
+        "AI-assisted social content drafting (weekly specials automation)",
+        "Customer database unification (Joe Coffee + Uber Eats + email captures into one CRM)",
+        "Loyalty program implementation or integration"
+      ]
+    },
+    "phase_3_longer_term": {
+      "price_range": "Tier 4 territory - custom scoping",
+      "components": [
+        "Two-location ops dashboard (sales, inventory, scheduling, catering pipeline)",
+        "AI receptionist for catering overflow calls and off-hours",
+        "Demand forecasting for prep and staffing",
+        "Wholesale ordering portal if they expand B2B"
+      ]
+    }
+  },
+  "pricing_positioning": {
+    "minimum_floor": "Tier 2: $2,500 + $500/mo - given Cole intro, owner interest, multi-location",
+    "likely_landing": "Tier 3: $4,000 + $750/mo - if catering + reviews + database scope confirmed",
+    "stretch_scope": "Tier 4: $7,500+ + $1,000-1,500/mo - full operating system integration",
+    "do_not": [
+      "Quote in the meeting",
+      "Volunteer discounts",
+      "Anchor with higher prices",
+      "Sell on price - sell on long-term partnership and tech compounding"
+    ],
+    "send_proposal_within": "48 hours of meeting"
+  },
+  "strategic_angle": {
+    "wrong_framing": "We'll fix what's broken at your business",
+    "right_framing": "We'll keep you at the cutting edge as you scale to 3-4 locations and grow catering",
+    "core_pitch": "I'm not the agency rebuilding your website. I'm the technical partner who makes sure your systems compound as you grow.",
+    "long_term_vision": "Outsourced tech department - they don't hire an in-house tech person, they have Elenos on retainer"
+  },
+  "relationship_dynamics": {
+    "cole_role": "Bridge - vouched for Ed, has social capital at stake",
+    "cole_responsibility": "Don't overpromise or underdeliver - protect Cole's standing at work",
+    "meeting_dynamic": "Treat as discovery, not sales pitch - boss is curious, not desperate",
+    "follow_up_protocol": "Send proposal within 48 hours of meeting, follow Lyons/Frank cadence"
+  },
+  "red_flags_to_watch": [
+    "If boss starts pitching a specific tool they want built - slow down, do diagnostic first",
+    "If boss asks for free work or pilot - hold the floor, point to retainer model",
+    "If boss tries to negotiate price in meeting - defer to proposal, no on-the-spot quotes",
+    "If scope balloons in conversation - note everything but propose phased approach in writing"
+  ],
+  "meeting_prep_checklist": [
+    "Check hallowedgroundscoffeeco.com - evaluate website quality",
+    "Browse @onhallowedgrounds Instagram for recent posts and engagement patterns",
+    "Look at Joe Coffee ordering experience as customer",
+    "Drive by or visit Merchantville location if possible before meeting",
+    "Print or have diagnostic questions ready",
+    "Bring laptop for note-taking, not for presenting",
+    "Wear something between casual and business casual - they're a cafe, match their vibe",
+    "Bring business card if you have one, or be ready to text contact info",
+    "Have Lyons demo ready to reference if asked for examples"
+  ],
+  "competitive_context": {
+    "likely_alternatives_they_are_considering": [
+      "Hiring a generalist marketing agency",
+      "Hiring a part-time in-house marketer/social media person",
+      "DIY with no-code tools",
+      "Doing nothing and continuing as-is"
+    ],
+    "elenos_differentiation": [
+      "Custom-built systems vs templates or platforms",
+      "Long-term partnership vs project-based",
+      "Technical depth - Ed actually codes, doesn't outsource",
+      "Local NJ - can attend events, meet in person",
+      "Portal model - ongoing relationship vs one-and-done"
+    ]
+  }
+}
