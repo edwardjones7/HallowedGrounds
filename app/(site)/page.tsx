@@ -5,6 +5,7 @@ import { MenuTeaser } from "@/components/home/MenuTeaser";
 import { CateringBand } from "@/components/home/CateringBand";
 import { SocialProof } from "@/components/home/SocialProof";
 import { Marquee } from "@/components/ui/Marquee";
+import { DownloadJoe } from "@/components/ui/DownloadJoe";
 import { LocalBusinessSchema } from "@/lib/schema";
 
 export default function HomePage() {
@@ -27,6 +28,7 @@ export default function HomePage() {
       <MenuTeaser />
       <CateringBand />
       <SocialProof />
+      <DownloadJoe />
     </>
   );
 }

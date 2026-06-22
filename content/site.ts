@@ -17,6 +17,14 @@ export const site = {
     email: "hello@hallowedgroundscoffeeco.com",
     phone: "",
   },
+  // Joe Coffee mobile ordering app. ⚠ CLIENT TO CONFIRM exact store links + copy.
+  joe: {
+    blurb:
+      "Order ahead, skip the line, and earn rewards with the Joe Coffee app.",
+    ios: "https://apps.apple.com/us/app/joe-coffee-order-ahead/id1167759164",
+    android:
+      "https://play.google.com/store/apps/details?id=coffee.joe.consumer",
+  },
 } as const;
 
 export type Site = typeof site;

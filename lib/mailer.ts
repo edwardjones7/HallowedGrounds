@@ -1,7 +1,8 @@
 import { Resend } from "resend";
 
 const apiKey = process.env.RESEND_API_KEY;
-const to = process.env.CONTACT_TO_EMAIL || "hello@hallowedgroundscoffeeco.com";
+const defaultTo =
+  process.env.CONTACT_TO_EMAIL || "hello@hallowedgroundscoffeeco.com";
 const from =
   process.env.CONTACT_FROM_EMAIL || "Hallowed Grounds <onboarding@resend.dev>";
 
@@ -11,6 +12,8 @@ type SendArgs = {
   subject: string;
   html: string;
   replyTo?: string;
+  /** Recipient(s). Defaults to CONTACT_TO_EMAIL. */
+  to?: string | string[];
 };
 
 /**
@@ -18,10 +21,12 @@ type SendArgs = {
  * it logs the message to the console and resolves successfully so forms
  * remain testable without secrets.
  */
-export async function sendMail({ subject, html, replyTo }: SendArgs) {
+export async function sendMail({ subject, html, replyTo, to }: SendArgs) {
+  const recipients = to ?? defaultTo;
+
   if (!resend) {
     console.log("\n──────── [DEV MAIL — no RESEND_API_KEY] ────────");
-    console.log("To:", to);
+    console.log("To:", Array.isArray(recipients) ? recipients.join(", ") : recipients);
     console.log("Subject:", subject);
     console.log("Reply-To:", replyTo ?? "—");
     console.log(html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim());
@@ -31,7 +36,7 @@ export async function sendMail({ subject, html, replyTo }: SendArgs) {
 
   const { error } = await resend.emails.send({
     from,
-    to,
+    to: recipients,
     subject,
     html,
     replyTo,

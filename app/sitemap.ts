@@ -9,8 +9,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/menu",
     "/story",
     "/catering",
+    "/catering/tray",
+    "/events",
     "/shop",
     "/careers",
+    "/contact",
   ];
 
   const staticPages = routes.map((r) => ({

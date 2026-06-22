@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { newsletterSchema } from "@/lib/validation";
 import { sendMail, emailShell, row } from "@/lib/mailer";
+import { saveSubscriber } from "@/lib/leads";
 
 export async function POST(req: Request) {
   let body: unknown;
@@ -18,17 +19,37 @@ export async function POST(req: Request) {
     );
   }
 
+  const { email, phone, source } = parsed.data;
+
+  let savedOk = false;
+  let sentOk = false;
+
+  try {
+    await saveSubscriber({ email, phone, source, tags: [source] });
+    savedOk = true;
+  } catch (e) {
+    console.error("[subscriber persist failed]", e);
+  }
+
   try {
     await sendMail({
-      subject: `Newsletter Signup — ${parsed.data.email}`,
-      html: emailShell("New Subscriber", row("Email", parsed.data.email)),
-      replyTo: parsed.data.email,
+      subject: `Newsletter Signup — ${email}`,
+      html: emailShell(
+        "New Subscriber",
+        [row("Email", email), row("Phone", phone), row("Source", source)].join("")
+      ),
+      replyTo: email,
     });
-    return NextResponse.json({ ok: true });
-  } catch {
+    sentOk = true;
+  } catch (e) {
+    console.error("[subscriber notify failed]", e);
+  }
+
+  if (!savedOk && !sentOk) {
     return NextResponse.json(
       { error: "Couldn't subscribe right now. Please try again." },
       { status: 500 }
     );
   }
+  return NextResponse.json({ ok: true });
 }

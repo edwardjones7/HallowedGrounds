@@ -2,8 +2,15 @@
 
 import { useState } from "react";
 
-export function NewsletterForm() {
+export function NewsletterForm({
+  source = "footer",
+  withPhone = false,
+}: {
+  source?: string;
+  withPhone?: boolean;
+}) {
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [state, setState] = useState<"idle" | "loading" | "done" | "error">(
     "idle"
   );
@@ -17,7 +24,7 @@ export function NewsletterForm() {
       const res = await fetch("/api/newsletter", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, phone, source }),
       });
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));
@@ -25,6 +32,7 @@ export function NewsletterForm() {
       }
       setState("done");
       setEmail("");
+      setPhone("");
     } catch (err) {
       setState("error");
       setError(err instanceof Error ? err.message : "Something went wrong.");
@@ -49,6 +57,15 @@ export function NewsletterForm() {
         placeholder="your@email.com"
         className="flex-1 border-b border-brass/30 bg-transparent px-1 py-3 text-parchment placeholder:text-parchment/35 focus:border-brass focus:outline-none"
       />
+      {withPhone && (
+        <input
+          type="tel"
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
+          placeholder="Phone (optional)"
+          className="flex-1 border-b border-brass/30 bg-transparent px-1 py-3 text-parchment placeholder:text-parchment/35 focus:border-brass focus:outline-none"
+        />
+      )}
       <button
         type="submit"
         disabled={state === "loading"}

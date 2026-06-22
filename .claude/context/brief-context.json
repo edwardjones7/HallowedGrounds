@@ -1,0 +1,576 @@
+{
+  "context_meta": {
+    "version": "2.0.0",
+    "last_updated": "2026-06-22",
+    "source_document": "HGCC_Website___Automation_Project_Brief.docx",
+    "source_date": "2026-06-22",
+    "prepared_by_client": true,
+    "client_used_ai_to_format": true,
+    "purpose": "Working context for Elenos planning, proposal generation, and build sequencing for Hallowed Grounds Coffee Co. partnership"
+  },
+
+  "client": {
+    "company_name": "Hallowed Grounds Coffee Co.",
+    "shorthand": "HGCC",
+    "primary_contact": {
+      "name": "Matt Gargano",
+      "email": "[from earlier brochure email]",
+      "role": "Owner / Operator",
+      "estimated_age_range": "late 20s - early 30s",
+      "personality_signals": [
+        "Same go-getter mindset as Ed",
+        "Genuinely interested in AI and systems",
+        "Self-aware about AI use (transparent about using it to format brief)",
+        "Looking to expand, has multiple projects in mind",
+        "Skeptical of agencies that pitched 'custom' Shopify",
+        "Wants real custom ownership of IP",
+        "Two-hour discovery meeting in person on 2026-06-22"
+      ],
+      "communication_style": "Direct, business-forward, warm, collaborative",
+      "decision_authority": "Yes - owner-operator"
+    },
+    "additional_contacts": {
+      "kyle": {
+        "role": "Receives in-store catering / tray order requests alongside catering email",
+        "email": "TBD - to be provided"
+      }
+    },
+    "warm_intro_source": {
+      "name": "Cole",
+      "relationship_to_ed": "Friend",
+      "relationship_to_matt": "Known connection",
+      "intro_frame": "Cole told Matt the meeting shouldn't feel like a sales pitch - Matt wanted to learn how Ed operates and builds systems, not be sold a service. Treated meeting as conversation between two business owners."
+    }
+  },
+
+  "deal_status": {
+    "stage": "Brief received, proposal pending",
+    "verbal_pricing_discussed": {
+      "brochure_redo": "$100 - confirmed in conversation",
+      "basic_site": "$1,497 - discussed verbally before brief expanded scope"
+    },
+    "client_email_signal": "Matt emailed 2026-06-22 at 2:46 PM saying 'Let's go ahead and redo the brochure, then we can start talking about the site and a full roadmap'",
+    "ed_response_pending": "Proposal with phased pricing - to be drafted Tuesday 6/23",
+    "competitive_context": {
+      "shopify_quote_alternative": "Matt mentioned another vendor quoting $2,000 for 5 pages, $4,000 for 10 pages on Shopify 'custom' - Matt was skeptical because not truly custom and IP ownership unclear",
+      "ed_positioning_advantage": "Real custom build, full IP ownership, foundation for roadmap, not theme-locked"
+    },
+    "pricing_decision_in_progress": {
+      "leaning_toward": "$2,997 brochure + MVP package with $349/mo retainer (split from $1,497 verbal vs $3,997+ fair-value)",
+      "phase_strategy": "Keep MVP pricing accessible to honor relationship momentum, scale subsequent phases meaningfully"
+    }
+  },
+
+  "business_model": {
+    "industry": "Specialty coffee + cafe + catering + community brand",
+    "structure": "Multi-location coffee company",
+    "revenue_streams_current_or_planned": [
+      "In-store walk-in retail (drinks, food)",
+      "Catering (full-service and corporate events)",
+      "In-store catering / tray orders (pickup)",
+      "Events (paid and free, ticketed)",
+      "Email signups for special offers",
+      "Joe app downloads (mobile ordering loyalty)",
+      "Future: E-commerce (coffee bags, merch, gift cards, seasonal)",
+      "Future: Subscriptions (recurring coffee delivery)",
+      "Future: Wholesale (B2B coffee bean sales)"
+    ],
+    "growth_thesis": "Convert website visitors into followers, in-store traffic, catering inquiries, event attendance, subscriptions, and long-term brand audience members"
+  },
+
+  "project_overview": {
+    "client_stated_goal": "Build a new website and digital infrastructure that supports the business today while creating a scalable foundation for future e-commerce, subscriptions, wholesale, sales automation, marketing automation, and AI-powered systems.",
+    "primary_outcome": "Convert visitors into followers, sales, subscriptions, inquiries, and store traffic",
+    "approach": "Phased rollout: MVP first, then e-commerce, automation, dashboards, and AI systems",
+    "key_principle": "Site should not be informational only - must function as a digital growth platform supporting customer acquisition, sales, operational efficiency, and long-term brand development",
+    "architectural_priority": "MVP must not block future development - everything built to scale into Phase 2-4 without rebuilding"
+  },
+
+  "design_direction": {
+    "desired_feel": [
+      "Professional",
+      "Warm",
+      "Community-focused",
+      "Modern",
+      "Easy to navigate",
+      "Coffee-forward",
+      "Built for both in-store AND online customers",
+      "Scalable for catering, events, e-commerce, subscriptions, wholesale, and automation"
+    ],
+    "design_philosophy": "Combine the warmth and local feel of a cafe with the structure and conversion strategy of a strong coffee e-commerce brand.",
+    "reference_websites": {
+      "stumptown_coffee": {
+        "url": "Stumptown Coffee Roasters",
+        "evaluate_for": ["Clean brand presentation", "Product/cafe integration", "Approachable coffee culture", "Online sales flow", "Location experience", "Clear CTAs"]
+      },
+      "bones_coffee": {
+        "url": "Bones Coffee Company",
+        "evaluate_for": ["Bold brand personality", "Strong e-commerce experience", "Memorable products", "Differentiated branding", "Subscription/product funnel inspiration"]
+      },
+      "la_colombe": {
+        "url": "La Colombe Coffee Roasters",
+        "evaluate_for": ["Product catalog structure", "Coffee retail presentation", "E-commerce/subscription inspiration", "Premium but accessible feel", "Product filtering/shopping experience"]
+      },
+      "onyx_coffee_lab": {
+        "url": "Onyx Coffee Lab",
+        "evaluate_for": ["Elevated specialty coffee aesthetic", "Storytelling", "Credibility", "Premium design", "Educational content", "User experience"]
+      },
+      "lacas_coffee": {
+        "evaluate_for": ["Wholesale/commercial positioning", "Traditional credibility", "Wholesale request flow", "B2B sales structure", "Product/service organization"]
+      },
+      "black_rifle_coffee": {
+        "url": "Black Rifle Coffee Company",
+        "evaluate_for": ["Strong brand identity", "E-commerce/subscription model", "Clear product funnels", "Community-driven messaging", "Membership/subscription inspiration"]
+      }
+    },
+    "evaluation_dimensions": [
+      "Homepage structure",
+      "Menu and product presentation",
+      "Location presentation",
+      "E-commerce layout",
+      "Subscription flow",
+      "Catering or wholesale inquiry flow",
+      "Calls to action",
+      "Brand storytelling",
+      "Mobile experience",
+      "Event/community content",
+      "Email signup and promotional offers",
+      "Customer journey from homepage to conversion"
+    ]
+  },
+
+  "phase_1_mvp": {
+    "goal": "Launch a clean, professional, easy-to-manage website that gives customers clear information, drives inquiries, supports each location, captures leads, and allows the team to update key content without needing a developer every time something changes.",
+    "features": {
+      "location_based_menu_management": {
+        "priority": "high",
+        "requirements": [
+          "Each location has own menu or menu section",
+          "Team can update items, pricing, descriptions, availability, and categories",
+          "Updates must be simple for non-technical team member",
+          "Support different menus by location if items vary",
+          "Mobile-friendly and easy for customers to use quickly"
+        ]
+      },
+      "catering_request_form": {
+        "priority": "high",
+        "fields": ["customer name", "email", "phone", "event date/time", "event location", "guest count", "catering type", "notes/special requests"],
+        "routing": "Submissions sent directly to catering email",
+        "ux": "Confirmation message after submission",
+        "future_compatibility": "CRM integration"
+      },
+      "in_store_catering_tray_request_form": {
+        "priority": "high",
+        "fields": ["customer name", "email", "phone", "pickup location", "pickup date/time", "requested items", "quantity", "dietary notes"],
+        "routing": "Submissions sent to catering email AND Kyle's email",
+        "distinction": "Clearly separate from full-service/event catering"
+      },
+      "events_page_with_ticketing": {
+        "priority": "high",
+        "requirements": [
+          "Add, edit, remove events",
+          "Each event: title, date/time, location, description, image/graphic, ticket/registration link",
+          "Ideally supports paid or free ticketing",
+          "If full ticketing too much for MVP - start with listings, integrate ticketing solution later",
+          "Clear CTAs for ticket purchase, registration, or RSVP"
+        ],
+        "mvp_consideration": "Acceptable to use third-party ticketing integration (Eventbrite, Stripe, etc.) rather than custom build"
+      },
+      "employment_application": {
+        "priority": "medium",
+        "fields": ["name", "email", "phone", "position of interest", "preferred location", "availability", "work experience", "resume upload (if possible)", "additional notes"],
+        "routing": "Sent to appropriate internal email (TBD)",
+        "ux": "Simple, mobile-friendly flow"
+      },
+      "location_pages_or_sections": {
+        "priority": "high",
+        "per_location_content": ["address", "hours", "contact info", "short blurb", "menu link or section", "photos if available", "CTA buttons"],
+        "seo_consideration": "Content structured for future local SEO"
+      },
+      "what_we_do_mission": {
+        "priority": "high",
+        "must_communicate": [
+          "What Hallowed Grounds is and what makes it different",
+          "Commitment to coffee, food, hospitality, community, experience",
+          "Why customers should choose Hallowed Grounds",
+          "Support for everyday customers + catering + events + wholesale opportunities"
+        ]
+      },
+      "multiple_ctas": {
+        "priority": "high",
+        "examples": [
+          "View Menu",
+          "Find a Location",
+          "Request Catering",
+          "Order Catering",
+          "Apply Now",
+          "View Events",
+          "Buy Tickets",
+          "Sign Up for Offers",
+          "Contact Us",
+          "Download Joe",
+          "Join Our Email List",
+          "Follow Us"
+        ],
+        "placement_strategy": "Strategic across homepage, location pages, menu pages, catering pages, event pages"
+      },
+      "signups_special_offers": {
+        "priority": "high",
+        "requirements": [
+          "Email signup form",
+          "Optional phone field for future SMS marketing",
+          "Tag or segment signups if possible",
+          "Built to later connect with HubSpot or another CRM/marketing dashboard",
+          "Signup opportunities appear in multiple places across site"
+        ]
+      },
+      "download_joe_cta": {
+        "priority": "high",
+        "requirements": [
+          "Prominent button",
+          "Short explanation of what Joe is and why customers should download it",
+          "Link to correct app/download page",
+          "Placement on homepage and potentially location/menu pages",
+          "CTA should help convert visitors into repeat customers"
+        ],
+        "client_to_provide": "Exact Joe download link and short description before development begins"
+      }
+    },
+    "suggested_pages": {
+      "required": [
+        "Home",
+        "Locations",
+        "Menus",
+        "Catering",
+        "Events",
+        "Careers / Application",
+        "About / What We Do",
+        "Contact"
+      ],
+      "optional": [
+        "Download Joe (could be section instead)",
+        "FAQs",
+        "Gallery",
+        "Community / Event highlights",
+        "Signups / Special Offers sections throughout"
+      ]
+    }
+  },
+
+  "phase_2_ecommerce_subscriptions_wholesale_crm_seo": {
+    "goal": "Expand the website from an informational and lead-generation site into a revenue-generating digital platform.",
+    "features": {
+      "ecommerce_store": {
+        "products_planned": [
+          "Coffee bags",
+          "Merchandise",
+          "Gift cards",
+          "Seasonal items",
+          "Catering-related products",
+          "Other retail products"
+        ],
+        "required_capabilities": [
+          "Product pages",
+          "Cart",
+          "Checkout",
+          "Payment processing",
+          "Order confirmation",
+          "Admin product management",
+          "Inventory considerations",
+          "Future compatibility with subscriptions and customer accounts"
+        ]
+      },
+      "subscriptions": {
+        "implied_use_case": "Recurring coffee delivery service"
+      },
+      "wholesale_portal": {
+        "implied_use_case": "B2B coffee bean sales to other businesses"
+      },
+      "crm_integration": {
+        "requirements": [
+          "Integrate forms and lead sources into HubSpot OR recommend better-fit CRM",
+          "Catering, wholesale, signup, and contact leads flow into CRM",
+          "Employment forms may be routed separately",
+          "Leads categorized by source/type",
+          "Lead data supports future follow-up automation"
+        ]
+      },
+      "full_seo_buildout": {
+        "scope": [
+          "Technical SEO setup",
+          "Metadata",
+          "Location-based SEO",
+          "Menu/service SEO",
+          "Catering SEO",
+          "Wholesale SEO",
+          "Blog/content structure if recommended",
+          "Google Search Console setup",
+          "Analytics setup",
+          "Local search considerations",
+          "Conversion tracking",
+          "SEO-friendly content structure"
+        ]
+      }
+    }
+  },
+
+  "phase_3_lead_recovery_sales_automation_prospecting": {
+    "goal": "Use automation and AI systems to capture, recover, nurture, and schedule leads across multiple channels.",
+    "features": {
+      "lead_generation_recovery": {
+        "purpose": "Follow up with leads who do not complete forms, respond, book, or purchase",
+        "channels": ["phone call", "text message", "email"],
+        "use_cases": [
+          "Catering inquiries",
+          "Wholesale inquiries",
+          "Abandoned checkout",
+          "Subscription interest",
+          "Event interest",
+          "Special offer signup follow-up"
+        ]
+      },
+      "automated_prospecting_scheduling": {
+        "scope": [
+          "Wholesale outreach",
+          "Catering outreach",
+          "Corporate/event prospecting",
+          "Partnership outreach",
+          "Automated booking/scheduling links",
+          "Sales pipeline follow-up"
+        ]
+      },
+      "text_email_automation": {
+        "sequences": [
+          "New signup welcome",
+          "Catering inquiry confirmation and follow-up",
+          "Wholesale lead nurture",
+          "Subscription promotions",
+          "Event reminders",
+          "Win-back campaigns",
+          "Special offers and announcements",
+          "Post-purchase or post-event follow-up"
+        ]
+      }
+    }
+  },
+
+  "phase_4_social_ads_dashboards": {
+    "goal": "Build marketing automation across social media, ads, and reporting dashboards.",
+    "features": {
+      "automated_social_media": {
+        "channels": ["Instagram", "Facebook", "TikTok", "LinkedIn", "Google Business Profile"],
+        "scope_target": "3 channels initially",
+        "components": [
+          "Content calendar",
+          "Automated or assisted post creation",
+          "Brand-consistent graphics/captions",
+          "Scheduling system",
+          "Approval process before posting if needed",
+          "Performance reporting"
+        ],
+        "supports": ["Store traffic", "Events", "Catering", "Subscriptions", "Brand growth"]
+      },
+      "meta_ads_integration": {
+        "requirements": [
+          "Connect Meta Ads data to dashboard",
+          "Track campaign performance and website conversions",
+          "Support retargeting audiences",
+          "Align lead forms, website traffic, and campaign reporting",
+          "Support future paid campaign optimization"
+        ]
+      },
+      "marketing_sales_dashboard": {
+        "data_sources_to_unify": [
+          "Website traffic",
+          "Form submissions",
+          "Catering leads",
+          "Wholesale leads",
+          "Email/SMS performance",
+          "E-commerce sales",
+          "Subscription sales",
+          "Event ticket sales",
+          "Meta Ads performance",
+          "Lead conversion status",
+          "Sales pipeline status",
+          "Follower growth",
+          "Campaign performance"
+        ]
+      }
+    }
+  },
+
+  "technical_expectations": {
+    "core_requirements": [
+      "Built for scalability - MVP must not block future development",
+      "Easy content management for the team",
+      "Mobile-first design",
+      "Fast page speed",
+      "SEO-friendly structure",
+      "Secure forms and data handling",
+      "Analytics and conversion tracking",
+      "Clean admin experience",
+      "HubSpot or CRM compatibility",
+      "Future AI agent and automation compatibility",
+      "Future e-commerce, subscription, wholesale portal, and customer account support",
+      "Clear form routing and internal notifications",
+      "Compatibility with email, SMS, ad tracking, and reporting tools"
+    ],
+    "elenos_stack_recommendation": {
+      "frontend": "Next.js (App Router)",
+      "backend": "Next.js API routes + Supabase",
+      "database": "Supabase (Postgres)",
+      "hosting": "Vercel",
+      "cms_approach": "Either Supabase-backed admin UI OR Sanity/Payload for content. Decision pending based on team CMS preference.",
+      "forms": "Custom API routes + Resend or Postmark for transactional email",
+      "ticketing_mvp_recommendation": "Integrate Eventbrite OR Stripe-powered custom for MVP",
+      "future_ecommerce_path": "Stripe + custom storefront OR Medusa.js if needs scale beyond Stripe Checkout"
+    }
+  },
+
+  "developer_questions_from_brief": [
+    "Best platform for the website based on phased goals",
+    "Best way to manage location-specific menus",
+    "Best solution for event ticketing",
+    "Best form routing setup for catering, in-store catering, applications, and wholesale",
+    "Whether HubSpot is the right CRM/dashboard",
+    "Best approach for future e-commerce and subscriptions",
+    "Best approach for future wholesale portal",
+    "Recommended timeline by phase",
+    "Estimated cost by phase",
+    "Assets/content needed before starting",
+    "How to structure the site so future phases can be added cleanly",
+    "Recommended analytics, tracking, and reporting setup",
+    "Recommended process for ongoing maintenance and updates"
+  ],
+
+  "assets_needed_from_client": {
+    "branding": [
+      "Logo files",
+      "Brand colors, fonts, or style guide if available"
+    ],
+    "media": [
+      "Photos and videos"
+    ],
+    "business_info": [
+      "Current menus by location",
+      "Location names, addresses, hours, and contact information",
+      "Existing brand copy, mission statement, or What We Do language"
+    ],
+    "contacts": [
+      "Catering email",
+      "Kyle's email",
+      "Hiring/application destination email"
+    ],
+    "integrations_and_access": [
+      "Joe download link and description",
+      "Social media links",
+      "Existing website/domain/hosting access if applicable",
+      "Current CRM, HubSpot, email marketing, or SMS tools",
+      "Meta Ads access if applicable"
+    ],
+    "planning_inputs": [
+      "Preferred launch timeline",
+      "Budget range or phase-by-phase budget expectations"
+    ]
+  },
+
+  "elenos_strategic_notes": {
+    "client_lifetime_value_estimate": "$40,000+ in build work across Phase 1-4 plus compounding monthly retainer over multi-year partnership",
+    "phase_pricing_thinking": {
+      "phase_0_brochure": "$100 (verbal commitment, honored)",
+      "phase_1_mvp_website": "$2,997 + $349/mo retainer (under negotiation - leaning toward this number)",
+      "phase_2_marketing_infrastructure": "$3,500 (Meta Ads, email/SMS, CRM connection)",
+      "phase_3_dashboard_layer": "$4,500",
+      "phase_4_ecommerce": "$7,500",
+      "phase_5_subscriptions": "$3,500",
+      "phase_6_wholesale_portal": "$5,000",
+      "phase_7_plus_ai_agents": "$10,000-15,000 each"
+    },
+    "positioning_strategy": [
+      "This is a partnership, not a transaction",
+      "Website is the foundation - every other system plugs into it",
+      "Real custom code, full IP ownership, no theme lock-in",
+      "Architecture designed to support every phase in roadmap without rework",
+      "Ongoing retainer relationship, not one-and-done"
+    ],
+    "competitive_differentiation_vs_shopify_quote": [
+      "Genuinely custom (their 'custom' is paid theme)",
+      "Full IP ownership (theirs locked in Shopify ecosystem)",
+      "Built for full roadmap, not 5-10 pages",
+      "Foundation supports years of compounding work"
+    ],
+    "risk_factors": [
+      "Underpricing Phase 1 could anchor future phases too low",
+      "Verbal $1,497 mismatch with actual brief scope needs honest framing",
+      "Multi-location CMS is real engineering work - don't underestimate",
+      "Event ticketing integration is non-trivial - keep MVP scope reasonable",
+      "Joe download link / app integration dependencies on third-party not yet defined"
+    ],
+    "demo_status": "Initial design demo already built. Refinement underway. Will be shown selectively as style/direction reference, NOT as complete MVP preview."
+  },
+
+  "relationship_context": {
+    "meeting_history": [
+      {
+        "date": "2026-06-22",
+        "type": "Discovery meeting",
+        "location": "Hallowed Grounds Coffee Co. location, ~15 min from Ed's house",
+        "duration": "~2 hours",
+        "outcome": "Excellent rapport. Matt requested brochure first, then website with full roadmap. Mentioned ton of future projects.",
+        "energy_signal": "Matt said 'love the stuff you're doing' in follow-up email"
+      }
+    ],
+    "communication_history": [
+      {
+        "date": "2026-06-22",
+        "channel": "Email",
+        "from": "Matt Gargano",
+        "summary": "Sent project brief, requested brochure go-ahead, said 'let's talk about the site and a full roadmap.' Asked for pricing for sections, direction, timing."
+      }
+    ],
+    "next_steps": {
+      "due_from_ed": "Phased proposal: brochure pricing, MVP pricing, sketched roadmap pricing, timing, direction",
+      "target_send_date": "2026-06-23 (Tuesday)",
+      "decision_factors_for_matt": "Pricing, scope clarity, partnership feel, IP ownership confidence"
+    }
+  },
+
+  "phase_1_mvp_build": {
+    "status": "Demo expanded to full Phase 1 MVP feature set in code (2026-06-22). Build green, runtime-verified with no secrets via dev fallbacks.",
+    "locked_architecture_decisions": {
+      "cms_backbone": "Supabase (Postgres) + lightweight hand-rolled /admin for non-technical staff editing. Chosen over headless CMS or static-TS so every later phase (e-commerce, CRM, subscriptions, dashboards) plugs into one source of truth without a rebuild.",
+      "events": "CMS-managed listings + external ticket/RSVP link (Eventbrite/Stripe). No custom ticketing in MVP per brief allowance.",
+      "lead_capture": "Every form submission persisted to Supabase (type + source tagged, CRM-ready) AND emailed via per-form routing. Resilient: DB and email run in separate try/catch so neither failure drops a lead.",
+      "scope_posture": "Foundation-first — DB + admin + all MVP pages/forms shipped this phase."
+    },
+    "developer_questions_answered": {
+      "best_platform": "Next.js (App Router) + Supabase + Vercel + Resend — real custom, full IP ownership, no theme lock-in.",
+      "location_specific_menus": "Per-location menu_categories/menu_items in Postgres with availability + sold-out flags; staff edit in /admin, public pages revalidate via cache tags (no redeploy).",
+      "event_ticketing": "Listings + external ticket link for MVP; custom ticketing deferred.",
+      "form_routing": "Per-form: catering, tray order (-> catering + Kyle), careers (-> hiring), contact. All persisted + emailed.",
+      "crm": "Leads land in a normalized, jsonb-payload table — HubSpot/CRM export or dashboards are a read away. CRM choice can be deferred without rework.",
+      "future_ecommerce_subscriptions_wholesale": "Normalized catalog (price numeric, availability) + Supabase Auth + RLS already in place; these extend additively.",
+      "analytics": "To wire in Phase 2 (GA4/Vercel Analytics + conversion events on form success)."
+    },
+    "features_built": [
+      "Per-location menu management (DB-backed, admin CRUD, sold-out toggles, instant revalidation)",
+      "Catering request form (persist + route + autoresponder)",
+      "In-store tray/pickup order form (routes to catering + Kyle)",
+      "Events page (published listings + external ticket links) with admin CRUD + image upload",
+      "Contact page + form",
+      "Careers form with resume upload (Supabase Storage, signed-URL download in admin inbox)",
+      "Newsletter with optional phone + source tagging (segmentable subscriber table)",
+      "Download Joe CTA band (home, menu, location pages)",
+      "Admin: Supabase Auth gate, dashboard, menus, events, read-only leads inbox",
+      "Per-location JSON-LD, sitemap, robots retained"
+    ],
+    "client_inputs_still_needed": [
+      "Kyle's email; hiring/application destination email; confirmed catering email",
+      "Real per-location menus + prices (extract from PDFs) for accurate seed",
+      "Joe Coffee download links + short blurb; gift-card provider URL",
+      "Logo/vector assets; hi-res photography (hero, per-location, food, team)",
+      "Reconcile Merchantville hours (6:30 vs 7:00)",
+      "Provision Supabase project + verify Resend sending domain for production"
+    ]
+  }
+}

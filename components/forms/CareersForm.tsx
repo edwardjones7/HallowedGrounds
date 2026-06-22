@@ -24,21 +24,13 @@ export function CareersForm() {
     setState("loading");
     setError("");
     const fd = new FormData(e.currentTarget);
-    const payload = {
-      name: fd.get("name"),
-      email: fd.get("email"),
-      phone: fd.get("phone"),
-      role: fd.get("role"),
-      location: fd.get("location"),
-      over18: fd.get("over18") === "on",
-      availability: fd.get("availability"),
-      message: fd.get("message"),
-    };
+    // Normalize the checkbox to a string the server schema accepts, then post
+    // the FormData as-is (multipart) so the résumé file rides along.
+    fd.set("over18", fd.get("over18") === "on" ? "true" : "false");
     try {
       const res = await fetch("/api/careers", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
+        body: fd,
       });
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));
@@ -131,10 +123,17 @@ export function CareersForm() {
         I confirm that I am 18 years of age or older.
       </label>
 
-      <p className="text-sm text-parchment/45">
-        Have a résumé? Email it to us and we&apos;ll attach it to your
-        application. Résumé upload is coming soon.
-      </p>
+      <Field label="Résumé (PDF or Word, optional)">
+        <input
+          name="resume"
+          type="file"
+          accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+          className="block w-full text-sm text-parchment/70 file:mr-4 file:border file:border-brass/30 file:bg-transparent file:px-4 file:py-2 file:text-[0.7rem] file:uppercase file:tracking-[0.18em] file:text-brass hover:file:border-brass/60"
+        />
+        <span className="mt-1 block text-xs text-parchment/40">
+          Up to 15 MB.
+        </span>
+      </Field>
 
       {error && <p className="text-sm text-red-300">{error}</p>}
 

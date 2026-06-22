@@ -4,6 +4,7 @@ import { notable } from "@/content/press";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionLabel } from "@/components/ui/SectionLabel";
+import Link from "next/link";
 import { CateringForm } from "@/components/forms/CateringForm";
 
 export const metadata: Metadata = {
@@ -55,6 +56,31 @@ export default function CateringPage() {
               </article>
             </Reveal>
           ))}
+        </div>
+      </section>
+
+      {/* In-store tray orders pointer */}
+      <section className="px-5 pb-4 pt-2 md:px-8">
+        <div className="mx-auto max-w-7xl">
+          <Reveal>
+            <Link
+              href="/catering/tray"
+              className="flex flex-col gap-2 border border-brass/20 bg-ink-soft p-6 transition-colors hover:border-brass/50 sm:flex-row sm:items-center sm:justify-between"
+            >
+              <span>
+                <span className="font-display text-xl text-parchment">
+                  Just need trays for pickup?
+                </span>
+                <span className="mt-1 block text-sm text-parchment/60">
+                  Coffee boxes, pastry trays, and breakfast platters for offices
+                  and small gatherings — order for in-store pickup.
+                </span>
+              </span>
+              <span className="whitespace-nowrap text-sm text-brass">
+                Order trays →
+              </span>
+            </Link>
+          </Reveal>
         </div>
       </section>
 

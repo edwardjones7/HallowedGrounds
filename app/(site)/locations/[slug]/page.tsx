@@ -6,6 +6,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { GoldRule } from "@/components/ui/GoldRule";
+import { DownloadJoe } from "@/components/ui/DownloadJoe";
 import { LocalBusinessSchema } from "@/lib/schema";
 
 export function generateStaticParams() {
@@ -134,6 +135,8 @@ export default async function LocationPage({
           </div>
         </section>
       )}
+
+      <DownloadJoe />
     </>
   );
 }

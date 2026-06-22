@@ -11,6 +11,7 @@ export function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const mid = Math.ceil(navLinks.length / 2);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -33,7 +34,7 @@ export function Nav() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 md:px-8">
           {/* Left links (desktop) */}
           <nav className="hidden flex-1 items-center gap-7 lg:flex">
-            {navLinks.slice(0, 3).map((l) => (
+            {navLinks.slice(0, mid).map((l) => (
               <NavItem key={l.href} {...l} active={pathname === l.href} />
             ))}
           </nav>
@@ -44,7 +45,7 @@ export function Nav() {
 
           {/* Right links (desktop) */}
           <nav className="hidden flex-1 items-center justify-end gap-7 lg:flex">
-            {navLinks.slice(3).map((l) => (
+            {navLinks.slice(mid).map((l) => (
               <NavItem key={l.href} {...l} active={pathname === l.href} />
             ))}
           </nav>
